@@ -122,13 +122,13 @@ If you are retrieving your data from an [ssh server](https://searchsecurity.tech
 
 ![Terminal tab](screenshots/rstudio-session-terminal.png)
 
-The `scp` is a way to copy files securely from a server.
-However, it works similarly to the `cp` command.
-To understand how this works, we will practice `cp` with some files already in the RStudio server.
+The `scp` command is a way to copy files securely from a server.
+However, it works similarly to the `cp` command, which is just for copying files in general.
+To understand how this works, we will practice `cp` with some files already in the RStudio Server.
 
 *Template:*
-The first argument is the file or directory you'd like to copy.
-The second argument is the location where you'd like to copy the file or directory from the first argument to.
+The first argument is the file you'd like to copy.
+The second argument is the folder location where you'd like to copy the file from the first argument to.
 
 ```
 cp <FROM_FILE_PATH> <TO_FILE_PATH>
