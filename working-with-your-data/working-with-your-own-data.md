@@ -39,6 +39,7 @@ We will email you with a reminder 6 months from now so you can make sure to remo
 ### Upload data that is online (from a url)
 
 If you are retrieving your data from online, perhaps from a publicly available repository, we encourage you to use the terminal command `wget`.
+`wget` works for `http://` `https://` and `ftp://` URLs.
 
 **Step 1)** Go to the Terminal tab in your RStudio session.
 
@@ -123,7 +124,7 @@ If you are retrieving your data from an [**s**ecure **sh**ell (ssh) server](http
 ![Terminal tab](screenshots/rstudio-session-terminal.png)
 
 The `scp` command is a way to copy files securely to or from a **s**ecure **sh**ell server.
-It works similarly to the [`cp` command](https://linuxize.com/post/cp-command-in-linux/), which is just for copying files in general.
+It works similarly to the [`cp` command](https://linuxize.com/post/cp-command-in-linux/), which is used for copying files that are all on the same computer.
 To understand how this works, we will practice `cp` with some files already in the RStudio Server.
 
 *Template:*
@@ -181,13 +182,13 @@ The `scp` command works similarly to the `cp` command we practiced above, except
 Just as we practiced with `cp`, the first argument is `FROM` the second argument is `TO`.
 
 *Template:*
-Main difference with `scp` is that we will need to have the server address and a colon.
+The main change with `scp` as compared to `cp` is that we will need to add the server address and a colon.
 Whatever login information you used in the previous step is what you will need to use here.
-Then we can have the `FROM` and `TO` file paths per usual.
+Then we can use the `FROM` and `TO` file paths as before.
 Remember to get rid of all `<` and `>`'s.
 
 ```
-scp <username@from_host>:<FROM_FILE_PATH> <TO_FILE_PATH>
+scp <username@server_name>:<FROM_FILE_PATH> <TO_FILE_PATH>
 ```
 
 If you are copying a folder of files, you may want to use the `-r` option.
@@ -195,11 +196,11 @@ This will `r`ecursively copy all the files in the folder you reference:
 
 *Template:*
 ```
-scp -r <username@from_host>:<FOLDER_FROM_FILE_PATH> <FOLDER_TO_SAVE_TO>
+scp -r <username@server_name>:<FOLDER_FROM_FILE_PATH> <FOLDER_TO_SAVE_TO>
 ```
 
 In either situation you will likely be prompted to enter your password.
-You can enter it interactively; it's best to not have the password written in the script.
+You can enter it interactively; it's best to not have the password written in a script.
 
 ### Upload *small* files from your own computer
 
