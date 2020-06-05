@@ -115,15 +115,15 @@ Using the `--ask-password` will prompt you to enter your password.
 
 ### Upload data that is on a ssh server
 
-If you are retrieving your data from an [ssh server](https://searchsecurity.techtarget.com/definition/Secure-Shell), like one your institution or lab may host data on, we encourage you to use [the terminal command `scp`](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/) to copy over your files you'd like to analyze to our server.
+If you are retrieving your data from an [**s**ecure **sh**ell (ssh) server](https://searchsecurity.techtarget.com/definition/Secure-Shell), like one your institution or lab may host data on, we encourage you to use [the terminal command `scp`](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/) to copy over your files you'd like to analyze to our server.
 (Make sure the data does not violate any of the [privacy issues described above](#things-to-know-before-uploading-your-data).)
 
 **Step 1)** Go to the Terminal tab in your RStudio session.
 
 ![Terminal tab](screenshots/rstudio-session-terminal.png)
 
-The `scp` command is a way to copy files securely from a server.
-However, it works similarly to the `cp` command, which is just for copying files in general.
+The `scp` command is a way to copy files securely to or from a **s**ecure **sh**ell server.
+It works similarly to the [`cp` command](https://linuxize.com/post/cp-command-in-linux/), which is just for copying files in general.
 To understand how this works, we will practice `cp` with some files already in the RStudio Server.
 
 *Template:*
