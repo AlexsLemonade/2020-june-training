@@ -168,7 +168,7 @@ Here's very general examples info about logging into [`ssh`](https://help.liquid
 *Template*
 Generally an ssh login will look something like this:
 ```
-ssh username@server_name
+ssh username@server
 ```
 
 Upon entering this command, it will probably ask you for a password.
@@ -188,7 +188,7 @@ Then we can use the `FROM` and `TO` file paths as before.
 Remember to get rid of all `<` and `>`'s.
 
 ```
-scp <username@server_name>:<FROM_FILE_PATH> <TO_FILE_PATH>
+scp <username@server>:<FROM_FILE_PATH> <TO_FILE_PATH>
 ```
 
 If you are copying a folder of files, you may want to use the `-r` option.
@@ -196,7 +196,7 @@ This will `r`ecursively copy all the files in the folder you reference:
 
 *Template:*
 ```
-scp -r <username@server_name>:<FOLDER_FROM_FILE_PATH> <FOLDER_TO_SAVE_TO>
+scp -r <username@server>:<FOLDER_FROM_FILE_PATH> <FOLDER_TO_SAVE_TO>
 ```
 
 In either situation you will likely be prompted to enter your password.
