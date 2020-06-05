@@ -122,20 +122,70 @@ If you are retrieving your data from an [ssh server](https://searchsecurity.tech
 
 ![Terminal tab](screenshots/rstudio-session-terminal.png)
 
+The `scp` is a way to copy files securely from a server.
+However, it works similarly to the `cp` command.
+To understand how this works, we will practice `cp` with some files already in the RStudio server.
+
+*Template:*
+The first argument is the file or directory you'd like to copy.
+The second argument is the location where you'd like to copy the file or directory from the first argument to.
+
+```
+cp <FROM_FILE_PATH> <TO_FILE_PATH>
+```
+
+*Example:*
+First you'll want to make sure that you are in your home directory:
+
+```
+# Navigate to your home directory in Terminal
+cd ~
+```
+
+Here we will copy this notebook *from* its location in `shared-data/working-with-your-data` *to* our own `training-modules/` folder.
+
+```
+cp shared-data/working-with-your-data/retrieve-SRAdb-metadata.Rmd  training-modules/
+```
+
+Let's double check it worked by using the `ls` command.
+
+```
+ls training-modules
+```
+
+You should see `retrieve-SRAdb-metadata.Rmd` printed out in addition to the names of the other folders and files in `training-modules` folder.
+
+Here are more [`cp` examples](https://www.geeksforgeeks.org/cp-command-linux-examples/).
+As with other commands, you can use `cp --help` to print out a full list of the options for `cp`.
+
 **Step 2)** Confirm your `ssh` login credentials.
 Your institution, or whomever gave you access to the server, should have given you a username and server address as well as more specific instructions on how to log on to the server.
 
 Here's very general examples info about logging into [`ssh`](https://help.liquidweb.com/s/article/Logging-into-Your-Server-via-Secure-Shell-SSH).
 
+*Template*
+Generally an ssh login will look something like this:
+```
+ssh username@server_name
+```
+
+Upon entering this command, it will probably ask you for a password.
+
+Once you are logged into your server, you should try to confirm the file path for the data you are looking to copy.
 If you are unsure of the file path of the data you are looking for, we recommend you use [`ls`](https://www.tecmint.com/15-basic-ls-command-examples-in-linux/) and [`find`](https://www.tecmint.com/35-practical-examples-of-linux-find-command/) commands to determine this and copy down the exact file path in your script.
 
 **Step 3)** Set up your `scp` command.
 
-The most simple `scp` command copies from one location to the other.  
-The first argument is the file or directory you'd like to copy.
-The second argument is the location where you'd like to copy the file or directory from the first argument to.
+The `scp` command works similarly to the `cp` command we practiced above, except that the `secure` part of copying from a **s**ecure **sh**ell will require us to supply the server's address and may require us to enter a password.
+Just as we practiced with `cp`, the first argument is `FROM` the second argument is `TO`.
 
 *Template:*
+Main difference with `scp` is that we will need to have the server address and a colon.
+Whatever login information you used in the previous step is what you will need to use here.
+Then we can have the `FROM` and `TO` file paths per usual.
+Remember to get rid of all `<` and `>`'s.
+
 ```
 scp <username@from_host>:<FROM_FILE_PATH> <TO_FILE_PATH>
 ```
@@ -148,7 +198,7 @@ This will `r`ecursively copy all the files in the folder you reference:
 scp -r <username@from_host>:<FOLDER_FROM_FILE_PATH> <FOLDER_TO_SAVE_TO>
 ```
 
-Running `scp` command may prompt you to enter your password.
+In either situation you will likely be prompted to enter your password.
 You can enter it interactively; it's best to not have the password written in the script.
 
 ### Upload *small* files from your own computer
