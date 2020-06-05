@@ -123,7 +123,7 @@ If you are retrieving your data from an [**s**ecure **sh**ell (ssh) server](http
 
 ![Terminal tab](screenshots/rstudio-session-terminal.png)
 
-The `scp` command is a way to copy files securely to or from a **s**ecure **sh**ell server.
+The `scp` command is a way to copy files securely to or from an ssh server.
 It works similarly to the [`cp` command](https://linuxize.com/post/cp-command-in-linux/), which is used for copying files that are all on the same computer.
 To understand how this works, we will practice `cp` with some files already in the RStudio Server.
 
@@ -178,7 +178,7 @@ If you are unsure of the file path of the data you are looking for, we recommend
 
 **Step 3)** Set up your `scp` command.
 
-The `scp` command works similarly to the `cp` command we practiced above, except that the `secure` part of copying from a **s**ecure **sh**ell will require us to supply the server's address and may require us to enter a password.
+The `scp` command works similarly to the `cp` command we practiced above, except that the `secure` part of copying from a ssh server will require us to supply the server's address and may require us to enter a password.
 Just as we practiced with `cp`, the first argument is `FROM` the second argument is `TO`.
 
 *Template:*
