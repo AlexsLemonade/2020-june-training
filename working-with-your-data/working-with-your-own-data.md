@@ -150,13 +150,13 @@ Then click the blue `Quickconnect` button.
 FileZilla may ask you if you want it to remember your passwords.
 We'd suggest creating a master password or using `Do not save password`.
 
-<img src="screenshots/filezilla-password.png">
+<img src="screenshots/filezilla-password.png" width=300>
 
 Next, FileZilla will ask you if you should trust our RStudio Server.
 You can check the box for `Always trust this host` if you don't want to be asked this again.
 Then click `OK`.
 
-<img src="screenshots/filezilla-trust-server.png">
+<img src="screenshots/filezilla-trust-server.png" width=300>
 
 #### Using FileZilla to Upload files to the RStudio Server
 
@@ -168,7 +168,7 @@ Then, on the left, navigate to the file or folder on your computer you'd like to
 You may be asked to allow FileZilla to have access to your files.
 Click `OK` for each time.
 
-<img src="screenshots/filezilla-permission.png">
+<img src="screenshots/filezilla-permission.png", width=300>
 
 For the folder or file you want to upload, right click on it and choose `Upload`.
 A progress bar on the bottom of the screen will tell you approximately how long it will take to upload.
