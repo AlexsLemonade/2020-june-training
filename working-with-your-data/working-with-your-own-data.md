@@ -170,7 +170,7 @@ Then, on the left, navigate to the file or folder on your computer you'd like to
 You may be asked to allow FileZilla to have access to your files.
 Click `OK` for each time.
 
-<img src="screenshots/filezilla-permission.png", width=300>
+<img src="screenshots/filezilla-permission.png" width=400>
 
 For the folder or file you want to upload, right click on it and choose `Upload`.
 A progress bar on the bottom of the screen will tell you approximately how long it will take to upload.
