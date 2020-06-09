@@ -123,7 +123,7 @@ Using the `--ask-password` will prompt you to enter your password.
 
 #### Install FileZilla on Mac
 
-Go to [FileZilla's website](https://filezilla-project.org/download.php?type=client) to download the FileZilla Client for your respective operating system.
+Go to [FileZilla's website](https://filezilla-project.org/download.php?type=client) to download the FileZilla Client.
 
 Click the big green `Download` button.
 
