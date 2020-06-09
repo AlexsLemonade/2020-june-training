@@ -26,7 +26,7 @@ We will email you with a reminder 6 months from now so you can make sure to remo
   - [Upload large files (> 1Gb) from your own computer](#upload-large-files--1gb-from-your-own-computer)
     - [Install FileZilla](#install-filezilla)
     - [Linking FileZilla to the RStudio Server](#linking-filezilla-to-the-rstudio-server)
-    - [Using FileZilla to Upload files to the RStudio Server](#using-filezilla-to-upload-files-to-the-rstudio-server)
+    - [Using FileZilla to upload files to the RStudio Server](#using-filezilla-to-upload-files-to-the-rstudio-server)
   - [Upload data that is on a ssh server](#upload-data-that-is-on-a-ssh-server)
   - [Upload *small* files (<1 Gb) from your own computer](#upload-small-files-1-gb-from-your-own-computer)
   - [Reading the data into your R environment.](#reading-the-data-into-your-r-environment)
