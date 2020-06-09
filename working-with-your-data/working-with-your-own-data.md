@@ -130,8 +130,15 @@ Click `Download` on this next page for `FileZilla` this is the only free option 
 
 <img src="screenshots/filezilla-download.png">
 
-After download is complete, you'll find the `FileZilla_3.48.1_<OPERATING_SYSTEM_TAG>.app.tar.bz2` in your download files or you can click on it in the corner of your web browser's screen.
+After download is complete, you'll find the `FileZilla_` file in your download files or you can click on it in the corner of your web browser's screen.
+On a Mac, this will be a a `.app.tar.bz2`, on a Windows, it will be a `.exe` file. 
 Double click on the file to install.
+On a *Mac*, you may want to move the App file to where your other applications are stored but you'll otherwise be done with installation.
+
+On a *Windows*, you'll be asked if you want to `Allow FileZilla to make changes` click `Yes`.  
+There will be a series of steps you need to click `Next` and `Accept` to them.
+
+<img src="screenshots/filezilla-windows.png" width=600>
 You may want to move the App file to where your other applications are stored.
 
 #### Linking FileZilla to the RStudio Server
