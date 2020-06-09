@@ -24,7 +24,8 @@ We will email you with a reminder 6 months from now so you can make sure to remo
 
   - [Upload data that is online (from a url)](#upload-data-that-is-online-from-a-url)
   - [Upload large files (> 1Gb) from your own computer](#upload-large-files--1gb-from-your-own-computer)
-    - [Install FileZilla](#install-filezilla)
+    - [Install FileZilla on Mac](#install-filezilla-on-mac)
+    - [Install FileZilla on Windows](#install-filezilla-on-windows)
     - [Linking FileZilla to the RStudio Server](#linking-filezilla-to-the-rstudio-server)
     - [Using FileZilla to upload files to the RStudio Server](#using-filezilla-to-upload-files-to-the-rstudio-server)
   - [Upload data that is on a ssh server](#upload-data-that-is-on-a-ssh-server)
@@ -120,7 +121,7 @@ Using the `--ask-password` will prompt you to enter your password.
 
 ### Upload large files (> 1Gb) from your own computer
 
-#### Install FileZilla
+#### Install FileZilla on Mac
 
 Go to [FileZilla's website](https://filezilla-project.org/download.php?type=client) to download the FileZilla Client for your respective operating system.
 
@@ -130,16 +131,30 @@ Click `Download` on this next page for `FileZilla` this is the only free option 
 
 <img src="screenshots/filezilla-download.png">
 
-After download is complete, you'll find the `FileZilla_` file in your download files or you can click on it in the corner of your web browser's screen.
-On a Mac, this will be a a `.app.tar.bz2`, on a Windows, it will be a `.exe` file. 
+After download is complete, you'll find the `FileZilla`'s `.app.tar.bz2` file in your download files or you can click on it in the corner of your web browser's screen.
 Double click on the file to install.
-On a *Mac*, you may want to move the App file to where your other applications are stored but you'll otherwise be done with installation.
 
-On a *Windows*, you'll be asked if you want to `Allow FileZilla to make changes` click `Yes`.  
-There will be a series of steps you need to click `Next` and `Accept` to them.
+You may want to move the App file to where your other applications are stored.
+
+#### Install FileZilla on Windows
+
+Go to [FileZilla's website](https://filezilla-project.org/download.php?type=client) to download the FileZilla Client.
+
+Click the big green `Download` button.
+
+Click `Download` on this next page for `FileZilla` this is the only free option but will have the functionality you need.
+
+<img src="screenshots/filezilla-download.png">
+
+After download is complete, you'll find the `FileZilla` `.exe` file in your download files or you can click on it in the corner of your web browser's screen.
+
+Double click on the file to install to begin installation.
+
+You'll be asked if you want to `Allow FileZilla to make changes` click `Yes`.  
+
+There will be a series of steps (like below) you need to click `Next` and `Accept` to them.
 
 <img src="screenshots/filezilla-windows.png" width=600>
-You may want to move the App file to where your other applications are stored.
 
 #### Linking FileZilla to the RStudio Server
 
