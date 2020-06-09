@@ -114,6 +114,61 @@ wget --user=<USERNAME> --ask-password <URL>
 ```
 Using the `--ask-password` will prompt you to enter your password.
 
+### Upload large files (> 1Gb) from your own computer
+
+#### Install FileZilla
+
+Go to [FileZilla's website](https://filezilla-project.org/download.php?type=client) to download the FileZilla Client for your respective operating system.
+
+Click the big green `Download` button.
+
+Click `Download` on this next page for `FileZilla` this is the only free option but will have the functionality you need.
+
+<img src="screenshots/filezilla-download.png">
+
+After download is complete, you'll find the `FileZilla_3.48.1_<OPERATING_SYSTEM_TAG>.app.tar.bz2` in your download files or you can click on it in the corner of your web browser's screen.
+Double click on the file to install.
+You may want to move the App file to where your other applications are stored.
+
+#### Linking FileZilla to the RStudio Server
+
+Open up the FileZilla application.
+At the top of the FileZilla screen, you can enter in the address and your credentials for our RStudio Server (send a message to one of our staff if you forgot your username or password).
+
+<img src="screenshots/filezilla-bar.png">
+
+For `Host`, type in `rstudio.ccdatalab.org`.
+For `Username`, type in the username you use to login in to our RStudio server.
+For `Password` type in the password you use to login in to our RStudio server.
+For `Port`, type in `22`.
+
+Then click the blue `Quickconnect` button.
+FileZilla may ask you if you want it to remember your passwords.
+We'd suggest creating a master password or using `Do not save password`.
+
+<img src="screenshots/filezilla-password.png">
+
+Next, FileZilla will ask you if you should trust our RStudio Server.
+You can check the box for `Always trust this host` if you don't want to be asked this again.
+Then click `OK`.
+
+<img src="screenshots/filezilla-trust-server.png">
+
+#### Using FileZilla to Upload files to the RStudio Server
+
+The left side of the FileZilla screen is the file/folder you'd like to upload and the right side is where in the RStudio Server you'd like to upload to.
+
+On the right side, click on the folder you'd like to upload the files to in the RStudio Server.
+
+Then, on the left, navigate to the file or folder on your computer you'd like to upload the RStudio Server.
+You may be asked to allow FileZilla to have access to your files.
+Click `OK` for each time.
+
+<img src="screenshots/filezilla-permission.png">
+
+For the folder or file you want to upload, right click on it and choose `Upload`.
+A progress bar on the bottom of the screen will tell you approximately how long it will take to upload.
+
 ### Upload data that is on a ssh server
 
 If you are retrieving your data from an [**s**ecure **sh**ell (ssh) server](https://searchsecurity.techtarget.com/definition/Secure-Shell), like one your institution or lab may host data on, we encourage you to use [the terminal command `scp`](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/) to copy over your files you'd like to analyze to our server.
@@ -202,7 +257,7 @@ scp -r <username@server>:<FOLDER_FROM_FILE_PATH> <FOLDER_TO_SAVE_TO>
 In either situation you will likely be prompted to enter your password.
 You can enter it interactively; it's best to not have the password written in a script.
 
-### Upload *small* files from your own computer
+### Upload *small* files (<1 Gb) from your own computer
 
 *This will only work for files smaller than 1GB*
 
