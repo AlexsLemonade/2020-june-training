@@ -26,6 +26,7 @@ We will email you with a reminder 6 months from now so you can make sure to remo
   - [Upload large files (> 1Gb) from your own computer](#upload-large-files--1gb-from-your-own-computer)
     - [Install FileZilla on Mac](#install-filezilla-on-mac)
     - [Install FileZilla on Windows](#install-filezilla-on-windows)
+    - [Install FileZilla on Ubuntu](#install-filezilla-on-ubuntu)
     - [Linking FileZilla to the RStudio Server](#linking-filezilla-to-the-rstudio-server)
     - [Using FileZilla to upload files to the RStudio Server](#using-filezilla-to-upload-files-to-the-rstudio-server)
   - [Upload data that is on a ssh server](#upload-data-that-is-on-a-ssh-server)
@@ -155,6 +156,18 @@ You'll be asked if you want to `Allow FileZilla to make changes` click `Yes`.
 There will be a series of steps (like below) you need to click `Next` and `Accept` to them.
 
 <img src="screenshots/filezilla-windows.png" width=600>
+
+#### Install FileZilla on Ubuntu
+
+Navigate to the Ubuntu Software Center and search for FileZilla.
+Select FileZilla and then click the `Install` button.
+
+Alternatively, you can install FileZilla via the command line with:
+
+```
+sudo apt-get update
+sudo apt-get install filezilla
+```
 
 #### Linking FileZilla to the RStudio Server
 
