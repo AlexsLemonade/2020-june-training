@@ -202,7 +202,7 @@ The left side of the FileZilla screen is the file/folder you'd like to upload an
 On the right side, click on the folder you'd like to upload the files to in the RStudio Server.
 
 Then, on the left, navigate to the file or folder on your computer you'd like to upload the RStudio Server.
-You may be asked to allow FileZilla to have access to your files.
+On a Mac, you will likely be asked to allow FileZilla to have access to your files.
 Click `OK` for each time.
 
 <img src="screenshots/filezilla-permission.png" width=400>
