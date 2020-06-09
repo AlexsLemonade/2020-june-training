@@ -141,24 +141,26 @@ At the top of the FileZilla screen, you can enter in the address and your creden
 
 <img src="screenshots/filezilla-bar.png">
 
-For `Host`, type in `rstudio.ccdatalab.org`.
-For `Username`, type in the username you use to login in to our RStudio server.
-For `Password` type in the password you use to login in to our RStudio server.
-For `Port`, type in `22`.
+
+For `Host`, type in `rstudio.ccdatalab.org`.  
+For `Username`, type in the username you use to login in to our RStudio server.  
+For `Password` type in the password you use to login in to our RStudio server.  
+For `Port`, type in `22`.  
+
 
 Then click the blue `Quickconnect` button.
 FileZilla may ask you if you want it to remember your passwords.
 We'd suggest creating a master password or using `Do not save password`.
 
-<img src="screenshots/filezilla-password.png" width=300>
+<img src="screenshots/filezilla-password.png" width=500>
 
 Next, FileZilla will ask you if you should trust our RStudio Server.
 You can check the box for `Always trust this host` if you don't want to be asked this again.
 Then click `OK`.
 
-<img src="screenshots/filezilla-trust-server.png" width=300>
+<img src="screenshots/filezilla-trust-server.png" width=500>
 
-#### Using FileZilla to Upload files to the RStudio Server
+#### Using FileZilla to upload files to the RStudio Server
 
 The left side of the FileZilla screen is the file/folder you'd like to upload and the right side is where in the RStudio Server you'd like to upload to.
 
