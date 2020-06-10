@@ -33,7 +33,6 @@ We will email you with a reminder 6 months from now so you can make sure to remo
   - [Using FileZilla to download files to your computer](#using-filezilla-to-download-files-to-your-computer)
 - [Upload *small* files (<1 Gb) from your own computer](#upload-small-files-1-gb-from-your-own-computer)
 - [Download *small* files (<1Gb) to your computer](#download-small-files-1gb-to-your-computer)
-- [Read the data into your R environment.](#read-the-data-into-your-r-environment)
 - [Installing packages](#installing-packages)
   - [Finding what packages are installed](#finding-what-packages-are-installed)
   - [Installing a new package](#installing-a-new-package)
