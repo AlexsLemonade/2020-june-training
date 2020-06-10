@@ -211,7 +211,7 @@ You can enter it interactively; it's best to not have the password written in a 
 ## Upload large files (> 1Gb) from your own computer
 
 FileZilla is a GUI that helps transfer local files to remote servers like our RStudio Server.
-We recommend setting up FileZilla if your dataset is larger than a Gb or if you will want to be transferring files back and forth to the RStudio Server. 
+We recommend setting up FileZilla if your dataset is larger than a Gb or if you will transfer files to and from the RStudio Server. 
 
 ### Install FileZilla on Mac
 
