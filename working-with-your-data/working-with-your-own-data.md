@@ -26,6 +26,7 @@ We will email you with a reminder 6 months from now so you can make sure to remo
   - [Upload large files (> 1Gb) from your own computer](#upload-large-files--1gb-from-your-own-computer)
     - [Install FileZilla on Mac](#install-filezilla-on-mac)
     - [Install FileZilla on Windows](#install-filezilla-on-windows)
+    - [Install FileZilla on Ubuntu](#install-filezilla-on-ubuntu)
     - [Linking FileZilla to the RStudio Server](#linking-filezilla-to-the-rstudio-server)
     - [Using FileZilla to upload files to the RStudio Server](#using-filezilla-to-upload-files-to-the-rstudio-server)
   - [Upload data that is on a ssh server](#upload-data-that-is-on-a-ssh-server)
@@ -156,7 +157,19 @@ There will be a series of steps (like below) you need to click `Next` and `Accep
 
 <img src="screenshots/filezilla-windows.png" width=600>
 
-### Linking FileZilla to the RStudio Server
+#### Install FileZilla on Ubuntu
+
+Navigate to the Ubuntu Software Center and search for FileZilla.
+Select FileZilla and then click the `Install` button.
+
+Alternatively, you can install FileZilla via the command line with:
+
+```
+sudo apt-get update
+sudo apt-get install filezilla
+```
+
+#### Linking FileZilla to the RStudio Server
 
 Open up the FileZilla application.
 At the top of the FileZilla screen, you can enter in the address and your credentials for our RStudio Server (send a message to one of our staff if you forgot your username or password).
@@ -189,7 +202,7 @@ The left side of the FileZilla window shows the files and folders on your comput
 On the right side, navigate to the folder you'd like to upload the files to on the RStudio Server.
 
 Then, on the left, navigate to the file or folder on your computer you'd like to upload the RStudio Server.
-You may be asked to allow FileZilla to have access to your files.
+On a Mac, you will likely be asked to allow FileZilla to have access to your files.
 Click `OK` for each time.
 
 <img src="screenshots/filezilla-permission.png" width=400>
