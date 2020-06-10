@@ -211,6 +211,9 @@ You can enter it interactively; it's best to not have the password written in a 
 
 ## Upload large files (> 1Gb) from your own computer
 
+FileZilla is a GUI that helps transfer local files to remote servers like our RStudio Server.
+We recommend setting up FileZilla if your dataset is larger than a Gb or if you will want to be transferring files back and forth to the RStudio Server. 
+
 ### Install FileZilla on Mac
 
 Go to [FileZilla's website](https://filezilla-project.org/download.php?type=client) to download the FileZilla Client.
@@ -244,7 +247,7 @@ You'll be asked if you want to `Allow FileZilla to make changes` click `Yes`.
 
 There will be a series of steps (like below) you need to click `Next` and `Accept` to them.
 
-<img src="screenshots/filezilla-windows.png" width=600>
+<img src="screenshots/filezilla-windows.png" width="600">
 
 ### Install FileZilla on Ubuntu
 
@@ -276,13 +279,13 @@ Then click the blue `Quickconnect` button.
 FileZilla may ask you if you want it to remember your passwords.
 We'd suggest creating a master password or using `Do not save password`.
 
-<img src="screenshots/filezilla-password.png" width=500>
+<img src="screenshots/filezilla-password.png" width="500">
 
 Next, FileZilla will ask you if you should trust our RStudio Server.
 You can check the box for `Always trust this host` if you don't want to be asked this again.
 Then click `OK`.
 
-<img src="screenshots/filezilla-trust-server.png" width=500>
+<img src="screenshots/filezilla-trust-server.png" width="500">
 
 ### Using FileZilla to upload files to the RStudio Server
 
@@ -294,11 +297,11 @@ Then, on the left, navigate to the file or folder on your computer you'd like to
 On a Mac, you will likely be asked to allow FileZilla to have access to your files.
 Click `OK` for each time.
 
-<img src="screenshots/filezilla-permission.png" width=400>
+<img src="screenshots/filezilla-permission.png" width="400">
 
 For the folder or file you want to upload, right click on it and choose `Upload`.
 
-<img src="screenshots/filezilla-upload.png" width=400>
+<img src="screenshots/filezilla-upload.png" width="400">
 
 A progress bar on the bottom of the screen will tell you approximately how long it will take to upload.
 
@@ -312,7 +315,7 @@ Then, on the right, navigate to the file or folder on the RStudio Server you'd l
 
 For the folder or file you want to download, right click on it and choose `Download`.
 
-<img src="screenshots/filezilla-download.png" width=400>
+<img src="screenshots/filezilla-download.png" width="400">
 
 A progress bar on the bottom of the screen will tell you approximately how long it will take to download.
 
@@ -367,15 +370,6 @@ Click on the `More` button with a gear next to it in the lower right pane.
 **Step 4)** Find where the file downloaded.
 Your computer may show the file in the bottom left of your browser window.
 You are likely to find your files in your `Downloads` folder!
-
-## Read the data into your R environment.
-
-This step is very dependent on the format of your data and what you are planning to do with it!
-If your file is a TSV, CSV, or RDS file, follow the examples in the `intro-to-R-tidyverse/intro-to-tidyverse.Rmd` notebook.
-
-We do NOT recommend clicking on the file in the RStudio panel to load it into your R environment, this typically won't work for anything that's not a very small file.
-
-Plus, for reproducibility purposes, you should write the data reading step into your notebook analyses!
 
 ## Installing packages
 
