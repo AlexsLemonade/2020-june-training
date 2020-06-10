@@ -219,7 +219,7 @@ Click the big green `Download` button.
 
 Click `Download` on this next page for `FileZilla` this is the only free option but will have the functionality you need.
 
-<img src="screenshots/filezilla-download.png">
+<img src="screenshots/filezilla-download-install.png">
 
 After download is complete, you'll find the `FileZilla`'s `.app.tar.bz2` file in your download files or you can click on it in the corner of your web browser's screen.
 Double click on the file to install.
